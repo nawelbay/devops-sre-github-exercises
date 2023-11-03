@@ -16,7 +16,7 @@ jobs:
           python-version: "3.10"
     - name: Install requirements
       run: pip install --quiet --requirement requirements.txt
-      run: pip install --upgrade pip
+           pip install --upgrade pip
     - name: Lint code
       run: |
         flake8 --ignore=E501,E231 *.py
