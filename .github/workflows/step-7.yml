@@ -17,6 +17,9 @@ jobs:
     - name: Install requirements
       run: pip install --quiet --requirement requirements.txt
            pip install --upgrade pip
+           pip install --upgrade pip
+           pip3 install flake8
+           pip3 install pylint
     - name: Lint code
       run: |
         flake8 --ignore=E501,E231 *.py
